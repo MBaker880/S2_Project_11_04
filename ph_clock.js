@@ -1,19 +1,26 @@
+"use strict";
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Case Problem 4
 
    Countdown Clock for Ticket Ordering
-   Author: 
-   Date:  
+   Author: Mackenzie Baker
+   Date:   2.14.2019
 
-   Filename:   ph_clock.js     
+   Filename: ph_clock.js     
 
 */
 
+var minsLeft = 0;
+var secsLeft = 15;
+var timeLeft = ((minsLeft * 60) + secsLeft);
 
-
-
+function countdown() {
+    minsLeft = Math.floor(timeLeft / 60);
+    secsLeft = ((timeLeft - 60) * minsLeft);
+}
 
 
 /* ------------------------------------------------- */
